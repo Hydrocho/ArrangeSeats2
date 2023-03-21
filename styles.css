@@ -1,0 +1,112 @@
+/* styles.css */
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left-column {
+  width: 100px; /* 왼쪽 열의 크기를 100픽셀로 고정 */
+  flex-shrink: 0; /* flex 레이아웃의 크기 조절을 방지 */
+}
+
+.pad-column {
+  width: 10px;
+  flex-shrink: 0; /* flex 레이아웃의 크기 조절을 방지 */
+}
+.right-column {
+  font-size: 10pt;
+}
+
+
+table#spreadsheet {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 10pt;
+  }
+  
+  table#spreadsheet td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+  }
+  
+  /* 왼쪽 열의 배경색 설정 */
+  table#spreadsheet td:nth-child(1) {
+    background-color: #f2f2f2;
+    width: 20px;
+    text-align: center;
+  }
+  
+  /* 오른쪽 열의 배경색 설정 */
+  table#spreadsheet td:nth-child(2) {
+    background-color: white;
+    width: 80px;
+  }
+
+.label {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+/* 학생 명렬 오른쪽 열의 셀 크기를 80픽셀로 설정 */
+table#spreadsheet td:nth-child(2) {
+  width: 80px;
+}
+
+
+/*여기서부터는 기존 자리배치용 css*/
+#tableContainer table {
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#tableContainer td {
+  border: 1px solid black;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.unavailable {
+  background-color: #ccc;
+}
+
+.changeable {
+  background-color: #f69665;
+}
+
+.centered-table {
+  width: 100%;
+  margin: 0 auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.centered-table td {
+  font-size: 1.5em; /* 이 속성을 추가하여 글자 크기를 1.5배로 늘립니다. */
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.centered-single-cell-table {
+  width: 30%;
+  margin: 0 auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.centered-single-cell-table td {
+  font-size: 2em; /* 이 속성을 추가하여 글자 크기를 2배로 늘립니다. */
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
